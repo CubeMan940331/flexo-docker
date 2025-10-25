@@ -1,4 +1,4 @@
-FROM rust as build
+FROM rust AS build
 
 COPY src/* /tmp/
 
@@ -29,4 +29,4 @@ COPY --from=build /tmp/scruffy-main/target/release/scruffy /usr/bin/
 ENV RUST_BACKTRACE="FULL" \
     RUST_LOG="debug"
 
-ENTRYPOINT /usr/bin/start_flexo.sh
+ENTRYPOINT ["/usr/bin/start_flexo.sh"]
