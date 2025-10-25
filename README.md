@@ -4,7 +4,7 @@ scripts to build docker image for [flexo](https://github.com/nroi/flexo) server
 
 ## Usage
 
-to build the docker image run `./build.sh`
+to build the docker image, run `./build.sh`.
 
 an example of running the container
 
