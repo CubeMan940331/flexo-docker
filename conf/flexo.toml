@@ -30,7 +30,7 @@ mirrorlist_fallback_file = "/var/cache/flexo/state/mirrorlist"
 mirrorlist_latency_test_results_file = "/var/cache/flexo/state/latency_test_results.json"
 
 # The IP address to listen on.
-listen_ip_address = "127.0.0.1"
+listen_ip_address = "0.0.0.0"
 
 # The port to listen on.
 port = 7878
@@ -154,4 +154,4 @@ num_versions_retain = 3
     # you change this setting, delete the file
     # /var/cache/flexo/state/latency_test_results.json and restart Flexo so
     # that the previous results are discarded and the latency tests run again.
-    allowed_countries = []
+    allowed_countries = ["TW", "HK", "JP"]

@@ -1,4 +1,4 @@
-FROM rust AS build
+FROM rust:trixie AS build
 
 COPY src/* /tmp/
 
@@ -12,7 +12,7 @@ RUN ["cargo", "build", "--release"]
 WORKDIR /tmp/scruffy-main
 RUN ["cargo", "build", "--release"]
 
-FROM debian:stable-slim
+FROM debian:trixie-slim
 
 EXPOSE 7878
 
